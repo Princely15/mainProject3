@@ -1,0 +1,100 @@
+    body {
+      background: #c1bfbf;
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      border: solid, 10px, ghostwhite;
+      border-radius: 5px;
+    }
+
+    .container {
+      width: 700px;
+      max-width: 100%;
+      border: inset, 10px, rgb(238, 233, 222);
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 2px;
+      background: #f2f2f2;
+      width: 250px;
+      outline: none;
+    }
+
+    input::placeholder{
+      color: #a8a7a7;
+      transition: color 0.3s ease;
+      
+    }
+    input:focus::placeholder{
+      color: transparent;
+
+    }
+
+    button {
+      background: #e9c364;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+
+    button:hover{
+      color: rgb(255, 255, 255);
+      background-color: rgb(242, 68, 68);
+      transition: color 0.7 ease;
+    }
+
+    .meme {
+      position: relative;
+      width: 100%;
+      background: black;
+      overflow: hidden;
+      border: 2px solid #444;
+    }
+
+    .meme img {
+      width: 100%;
+      display: block;
+}
+
+    .text {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: Impact, sans-serif;
+
+      text-shadow:
+        2px 2px 0 black,
+       -2px 2px 0 black,
+        2px -2px 0 black,
+       -2px -2px 0 black;
+    }
+
+    .top-text {
+      top: 20px;
+    }
+
+    .bottom-text {
+      bottom: 20px;
+    }

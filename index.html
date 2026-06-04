@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+  <title>Meme Generator</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Can You Meme?</h1>
+
+    <div class="controls">
+
+      <input
+        type="text"
+        id="image-url"
+        placeholder="URL"
+      >
+
+      <input
+        type="text"
+        id="top-input"
+        placeholder="Top Text"
+      >
+
+      <input
+        type="text"
+        id="bottom-input"
+        placeholder="Bottom Text"
+      >
+
+      <button id="generate-btn">
+        Generate Meme
+      </button>
+
+    </div>
+
+    <div class="meme">
+
+      <img
+        id="meme-image">
+
+      <div class="text top-text" id="top-text"></div>
+
+      <div class="text bottom-text" id="bottom-text"></div>
+
+    </div>
+
+     <div id="meme-history"></div>
+
+<button id="clear-btn">Clear All Memes</button>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
